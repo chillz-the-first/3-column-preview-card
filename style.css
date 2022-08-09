@@ -1,0 +1,109 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    --sedan-background: hsl(31, 77%, 52%);
+    --suv-background: hsl(184, 100%, 22%);
+    --lux-background: hsl(179, 100%, 13%);
+    --paragraaphs: hsla(0, 0%, 100%, 0.75);
+    --head-btn-back: hsl(0, 0%, 95%);
+}
+
+button {
+    background-color: var(--head-btn-back);
+    padding: 12px 25px;
+    margin-top: 2rem;
+    border: 2px solid #fff;
+    border-radius: 25px;
+    text-align: center;
+    font-family: 'Lexend Deca', sans-serif;
+}
+button:hover {
+    background: transparent;
+    color: var(--head-btn-back);
+    border: 2px solid #fff;
+}
+
+.btn-sedan {
+    color: var(--sedan-background);
+}
+.btn-suv {
+    color: var(--suv-background);
+}
+.btn-lux {
+    color: var(--lux-background);
+}
+
+.container {
+    width: 100vw;
+    height: 100vh;
+    background: var(--head-btn-back);
+    display: grid;
+    place-content: center;
+}
+
+.transport {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    width: 70%;
+    margin: 0 auto;
+    border-radius: 15px;
+}
+
+.car {
+    padding: 50px;
+}
+
+.sedan {
+    background-color: var(--sedan-background);
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+}
+
+.suv {
+    background-color: var(--suv-background);
+}
+
+.lux {
+    background-color: var(--lux-background);
+    border-bottom-right-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+.car img {
+    margin-bottom: 1.5rem;
+}
+.car h1 {
+    font-family: 'Big Shoulders Display', cursive;
+    margin-bottom: 1.5rem;
+    color: var(--head-btn-back);
+}
+.car p {
+    font-family: 'Lexend Deca', sans-serif;
+    font-size: 15.5px;
+    color: var(--paragraaphs);
+    margin-bottom: 1.5rem;
+}
+
+@media screen and (max-width: 450px) {
+    .transport {
+        grid-template-columns: 1fr;
+        width: 80%;
+        margin: 2rem auto;
+    }
+    
+    .sedan {
+        border-top-left-radius: 10px;
+        border-top-right-radius: 10px;
+        border-bottom-left-radius: 0;
+    }
+    
+    .lux {
+        border-bottom-right-radius: 10px;
+        border-bottom-left-radius: 10px;
+        border-top-right-radius: 0;
+    }
+}
