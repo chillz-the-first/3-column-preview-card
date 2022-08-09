@@ -90,13 +90,14 @@ button:hover {
 
 @media screen and (max-width: 450px) {
     .container {
-        height: 250vh;
+        height: 150vh;
         place-content: unset;
     }
 
     .transport {
         grid-template-columns: 1fr;
         width: 80%;
+        height: 80%;
         margin: 2rem auto;
     }
 
