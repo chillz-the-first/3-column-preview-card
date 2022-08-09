@@ -90,6 +90,7 @@ button:hover {
 
 @media screen and (max-width: 450px) {
     .container {
+        height: 250vh;
         place-content: unset;
     }
 
